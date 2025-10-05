@@ -32,7 +32,7 @@ Amazon SQS (standard)
 Lambda Worker (Python)
   - idempotent processing
   - writes results to DynamoDB
-  - stores blobs to S3 (optional)
+  - stores blobs to S3 
   - publishes SNS ops message
         │
         ├──▶ DynamoDB (on-demand)
@@ -70,7 +70,7 @@ Billing: free-tier usage/budget alerts
 │  └─ github-actions/
 │     └─ infra.yml                # plan/apply with OIDC; tfsec/tflint
 ├─ automation/
-│  └─ drift_check/                # optional: plan -detailed-exitcode → SNS
+│  └─ drift_check/                #  plan -detailed-exitcode → SNS
 └─ .pre-commit-config.yaml        # fmt, validate, tflint, tfsec hooks
 ```
 
